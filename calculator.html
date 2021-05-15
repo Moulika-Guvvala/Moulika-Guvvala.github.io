@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input{
+            width: 100%;
+            border-color:white;
+            border-radius: 5px;
+
+        }
+    </style>
+</head>
+<body>
+    <form>
+    
+    <table style="border: 4px;">
+        <div>Basic calculator</div>
+        <tr>
+            <td><input type="button" style="width:100%;height:45px;background-color: slategrey;" value="AC" onclick="clr()"/></td>
+            <td colspan="3"><input type="text" style="width:129%;height:40px;border-color:slategrey;"  id="edu"/></td>
+           
+        </tr>
+        <tr>
+           
+            <td style="width: 20%;"><input type="button" style="height: 30px;"  value=" 1 " onclick="dis('1')"/></td>
+            <td><input type="button" value=" 2 " style="height: 30px;"  onclick="dis('2')"/></td>
+            <td><input type="button" value=" 3 " style="height: 30px;"  onclick="dis('3')"/></td>
+            <td><input type="button" style="background-color: slategrey;height:30px;" value=" + "  onclick="dis('+')"/></td>
+            <td><input type="button" value="  DEL " style="width: 100%;background-color: slategrey;height: 30px;" onclick="del()"></td>
+            
+            
+        </tr>
+        <tr>
+            <td><input type="button" style="height: 30px;"  value="4" onclick="dis('4')"/></td>
+            <td><input type="button" style="height: 30px;"  value="5" onclick="dis('5')"/></td>
+            <td><input type="button" style="height: 30px;"  value="6" onclick="dis('6')"/></td>
+            <td><input type="button" style="background-color: slategrey;height: 30px;" value="-" onclick="dis('-')"/></td>
+            <td><input type="button" style="background-color: slategrey;height: 30px;" value=" ( " onclick="dis('(')"/></td>
+           
+        </tr>
+        <tr>
+            
+            <td><input type="button" style="height: 30px;"  value="7" onclick="dis('7')"/></td>
+            <td><input type="button" style="height: 30px;"  value="8" onclick="dis('8')"/></td>
+            <td><input type="button" style="height: 30px;"  value="9" onclick="dis('9')"/></td>
+            <td><input type="button" style="background-color: slategrey;height: 30px;" value="x" onclick="dis('*')"/></td>
+            <td><input type="button" style="background-color: slategrey;height: 30px;" value=")" onclick="dis(')')"/></td>
+            
+        </tr>
+        <tr>
+            <td><input type="button" style="background-color: slategrey;height: 30px;" value="/" onclick="dis('/')"/></td>
+            <td><input type="button" style="height: 30px;"  value="0" onclick="dis('0')"/></td>
+            <td><input type="button" style="background-color: slategrey;height: 30px;" value="." onclick="dis('.')"/></td>
+            <td><input type="button" style="background-color: slategrey;height: 30px;" value="%" onclick="dis('%')"/></td>
+            <td><input type="button" style="background-color: slategrey;height: 30px;" value="=" onclick="solve()"/></td>
+        </tr>
+    </table>
+    <script src="calculator.js"></script>
+    </form>
+</body>
+</html>
